@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220620 18:47:48.523" rpa="false" schemaversion="3">
+<suite id="s1" name="invalidLogin" source="C:\Users\Sulaimon\PycharmProjects\nopCommerce\tests\invalidLogin.robot">
+<test id="s1-t1" name="Invalid login" line="18">
+<kw name="Login with invalid login credentials should return correct message">
+<arg>iwalewa22@gmail.com</arg>
+<arg>testing</arg>
+<arg>No customer account found</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220620 18:47:48.841" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220620 18:47:48.841" endtime="20220620 18:47:55.754"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 18:47:55.754" endtime="20220620 18:47:55.900"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:47:55.900" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220620 18:47:55.900" endtime="20220620 18:47:56.498"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_EMAILFIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:47:56.500" level="INFO">Typing text 'iwalewa22@gmail.com' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20220620 18:47:56.499" endtime="20220620 18:47:56.620"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_PASSWORDFIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:47:56.620" level="INFO">Typing text 'testing' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20220620 18:47:56.620" endtime="20220620 18:47:56.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:47:56.726" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220620 18:47:56.726" endtime="20220620 18:47:57.213"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${errormessage}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220620 18:47:57.231" level="INFO">Current page contains text 'No customer account found'.</msg>
+<status status="PASS" starttime="20220620 18:47:57.213" endtime="20220620 18:47:57.231"/>
+</kw>
+<status status="PASS" starttime="20220620 18:47:48.840" endtime="20220620 18:47:57.231"/>
+</kw>
+<kw name="Login with invalid login credentials should return correct message">
+<arg>iwalewa+22g@mail.com</arg>
+<arg>test</arg>
+<arg>No customer account found</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220620 18:47:57.232" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220620 18:47:57.232" endtime="20220620 18:48:04.600"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 18:48:04.600" endtime="20220620 18:48:04.743"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:04.744" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220620 18:48:04.743" endtime="20220620 18:48:05.345"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_EMAILFIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:05.346" level="INFO">Typing text 'iwalewa+22g@mail.com' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:05.345" endtime="20220620 18:48:05.466"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_PASSWORDFIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:05.466" level="INFO">Typing text 'test' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:05.466" endtime="20220620 18:48:05.562"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:05.563" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220620 18:48:05.562" endtime="20220620 18:48:06.106"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${errormessage}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220620 18:48:06.130" level="INFO">Current page contains text 'No customer account found'.</msg>
+<status status="PASS" starttime="20220620 18:48:06.107" endtime="20220620 18:48:06.130"/>
+</kw>
+<status status="PASS" starttime="20220620 18:47:57.232" endtime="20220620 18:48:06.131"/>
+</kw>
+<kw name="Login with invalid login credentials should return correct message">
+<arg>${EMPTY}</arg>
+<arg>testing</arg>
+<arg>Please enter your email</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220620 18:48:06.133" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220620 18:48:06.133" endtime="20220620 18:48:17.070"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 18:48:17.070" endtime="20220620 18:48:17.193"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:17.195" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220620 18:48:17.193" endtime="20220620 18:48:19.211"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_EMAILFIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:19.212" level="INFO">Typing text '' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:19.211" endtime="20220620 18:48:19.301"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_PASSWORDFIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:19.301" level="INFO">Typing text 'testing' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:19.301" endtime="20220620 18:48:19.417"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:19.418" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220620 18:48:19.418" endtime="20220620 18:48:19.483"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${errormessage}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220620 18:48:19.502" level="INFO">Current page contains text 'Please enter your email'.</msg>
+<status status="PASS" starttime="20220620 18:48:19.483" endtime="20220620 18:48:19.502"/>
+</kw>
+<status status="PASS" starttime="20220620 18:48:06.132" endtime="20220620 18:48:19.503"/>
+</kw>
+<kw name="Login with invalid login credentials should return correct message">
+<arg>iwalewa+22@gmail.com</arg>
+<arg>${EMPTY}</arg>
+<arg>No customer account found</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220620 18:48:19.505" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220620 18:48:19.504" endtime="20220620 18:48:28.690"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 18:48:28.690" endtime="20220620 18:48:28.842"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:28.843" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220620 18:48:28.842" endtime="20220620 18:48:30.035"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_EMAILFIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:30.036" level="INFO">Typing text 'iwalewa+22@gmail.com' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:30.035" endtime="20220620 18:48:30.151"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_PASSWORDFIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:30.152" level="INFO">Typing text '' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:30.152" endtime="20220620 18:48:30.247"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:30.248" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220620 18:48:30.248" endtime="20220620 18:48:30.804"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${errormessage}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220620 18:48:30.828" level="INFO">Current page contains text 'No customer account found'.</msg>
+<status status="PASS" starttime="20220620 18:48:30.805" endtime="20220620 18:48:30.828"/>
+</kw>
+<status status="PASS" starttime="20220620 18:48:19.503" endtime="20220620 18:48:30.828"/>
+</kw>
+<kw name="Login with invalid login credentials should return correct message">
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>Please enter your email</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220620 18:48:30.831" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220620 18:48:30.831" endtime="20220620 18:48:41.271"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 18:48:41.271" endtime="20220620 18:48:41.424"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:41.425" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220620 18:48:41.424" endtime="20220620 18:48:42.400"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_EMAILFIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:42.401" level="INFO">Typing text '' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:42.400" endtime="20220620 18:48:42.501"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_PASSWORDFIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:42.502" level="INFO">Typing text '' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20220620 18:48:42.501" endtime="20220620 18:48:42.615"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOMEPAGE_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 18:48:42.615" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220620 18:48:42.615" endtime="20220620 18:48:42.698"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${errormessage}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220620 18:48:42.723" level="INFO">Current page contains text 'Please enter your email'.</msg>
+<status status="PASS" starttime="20220620 18:48:42.699" endtime="20220620 18:48:42.723"/>
+</kw>
+<status status="PASS" starttime="20220620 18:48:30.829" endtime="20220620 18:48:42.723"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220620 18:48:42.724" endtime="20220620 18:48:56.355"/>
+</kw>
+<status status="PASS" starttime="20220620 18:47:48.839" endtime="20220620 18:48:56.355"/>
+</test>
+<doc>test suite for invalid login</doc>
+<status status="PASS" starttime="20220620 18:47:48.524" endtime="20220620 18:48:56.357"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="invalidLogin">invalidLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
